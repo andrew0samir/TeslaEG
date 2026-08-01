@@ -1,6 +1,6 @@
 import Hero from "@/components/Hero";
 import Lightfall from "@/components/Lightfall";
-import PillNav from "@/components/PillNav";
+// import PillNav from "@/components/PillNav";
 
 export default function Home() {
   return (
@@ -9,14 +9,14 @@ export default function Home() {
         <Lightfall
           colors={["#A6C8FF", "#5227FF", "#FF9FFC"]}
           backgroundColor="#0A29FF"
-          speed={0.5}
+          speed={0.1}
           streakCount={2}
           streakWidth={1}
           streakLength={1}
-          glow={1}
-          density={0.6}
+          glow={0.5}
+          density={0.5}
           twinkle={1}
-          zoom={3}
+          zoom={2}
           backgroundGlow={0.5}
           opacity={1}
           mouseInteraction
@@ -25,7 +25,7 @@ export default function Home() {
         />
       </div>
       <main className="flex justify-center items-center">
-        <PillNav
+        {/* <PillNav
           logo="/teslaLogo.png"
           logoAlt="Tesla EG Company Logo"
           items={[
@@ -41,8 +41,8 @@ export default function Home() {
           pillColor="#ffffff"
           hoveredPillTextColor="#ffffff"
           pillTextColor="#000000"
-          initialLoadAnimation
-        />
+         initialLoadAnimation
+        /> */}
         <Hero />
       </main>
     </>
